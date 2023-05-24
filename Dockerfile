@@ -1,4 +1,4 @@
-# nini94/tensorflow2.5.0-dlib19.22-opencv4.5.2  download from dockerhup 
+# nini94/tensorflow2.5.0-dlib19.22-opencv4.5.2  download from dockerhup. you can also use our image aopdsenet.
 
 FROM nini94/tensorflow2.5.0-dlib19.22-opencv4.5.2:latest
 
