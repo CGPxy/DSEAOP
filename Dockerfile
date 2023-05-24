@@ -1,17 +1,20 @@
-FROM ubuntu:v1
+# nini94/tensorflow2.5.0-dlib19.22-opencv4.5.2  download from dockerhup 
 
+FROM nini94/tensorflow2.5.0-dlib19.22-opencv4.5.2:latest
+
+RUN useradd -ms /bin/bash cgpnk
 USER cgpnk
 
-WORKDIR /home/dy/DSENET
+WORKDIR /opt/cgpnk
 
-ENV PATH="/anaconda3/bin:$PATH"
+ENV PATH="/home/cgpnk/.local/bin:${PATH}"
 
-COPY --chown=cgpnk:cgpnk requirements.txt /home/DSENET/
-COPY --chown=cgpnk:cgpnk model/ /home/DSENET/model/
-COPY --chown=cgpnk:cgpnk multi_predict.py /home/DSENET/
+COPY --chown=cgpnk:cgpnk requirements.txt /opt/cgpnk/
+COPY --chown=cgpnk:cgpnk model /opt/cgpnk/model/
+COPY --chown=cgpnk:cgpnk multi_predict.py /opt/cgpnk/
 
-ENTRYPOINT python -m multi_predict $0 $@
+RUN pip install --user -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-LABEL nl.diagnijmegen.rse.algorithm.name=seg_algorithm
 
+ENTRYPOINT python3 -m multi_predict $0 $@s
 
