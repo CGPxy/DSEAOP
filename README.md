@@ -1,5 +1,6 @@
 # DSEU-net
 
+
 ![DSEU-net](https://github.com/CGPxy/DSEAOP/assets/52651150/d505743a-a347-4f1f-a497-4e35bf3eed38)
 
 In this work, we developed a dee supervision U-net with SE block.
@@ -14,4 +15,5 @@ Download the weights we have already trained directly, but modify path settings 
 
 # Running Method 2
 Run our image directly
-
+链接：https://pan.baidu.com/s/1cofTOnQW2XN8HxoWSSYx9Q 
+提取码：CGPN
