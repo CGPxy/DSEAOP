@@ -4,3 +4,4 @@ scipy==1.4.1
 tqdm==4.62.3
 simpleITK==2.1.0
 numpy==1.19.5
+opencv-python==4.5.4.60
