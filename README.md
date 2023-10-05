@@ -12,14 +12,6 @@ Download the weights we have already trained directly.
 提取码：CGPN
 
 
-## step 1 pull ours image
-Image ID：a258a301dfe8     
-REPOSITORY：aopdsenet
-TAG：latest
-
-## step 2 uppload input image
-./input/images/pelvic-2d-ultrasound/
-
-## step 3 get segmentation result
-docker run -it (your Image ID)  /bin/bash 
+# Running Method 2
+Run our image directly, but modify path settings in multi_predict.py
 
