@@ -7,11 +7,11 @@ In this work, we developed a dee supervision U-net with SE block.
 
 # Running Method 1
 
-Download the weights we have already trained directly.
+Download the weights we have already trained directly, but modify path settings in multi_predict.py.
 链接：https://pan.baidu.com/s/1kKKkrb3O8s7actVyT7ow9w 
 提取码：CGPN
 
 
 # Running Method 2
-Run our image directly, but modify path settings in multi_predict.py
+Run our image directly
 
